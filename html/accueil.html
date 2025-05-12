@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Pedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/yoshi_logo.png"type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Mario Pedia</h1>
+        <br>
+        <a href="./accueil.html" class="logo">
+        <img src="../img/yoshi_logo.png" alt="Yoshi-Logo">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Personnages</a>
+                    <div class="dropdown-content">
+                        <a href="mario.html">Mario</a>
+                        <a href="luigi.html">Luigi</a>
+                        <a href="peach.html">Peach</a>
+                        <a href="yoshi.html">Yoshi</a>
+                        <a href="toad.html">Toad</a>
+                    </div>
+                </li>
+                <li><a href="jeu.html">Jeu</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1 id="title"> Bienvenue sur le site Mario Pedia, le wiki pour les fans de Mario !</h1>
+        </section>
+        <section id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="../img/wallpaper1.jpg" alt="Image 1" id="carrousel-img">
+                    <img src="../img/wallpaper2.jpg" alt="Image 2" id="carrousel-img">
+                    <img src="../img/wallpaper3.jpg" alt="Image 3" id="carrousel-img">
+                    <img src="../img/wallpaper4.jpg" alt="Image 3" id="carrousel-img">
+                </div>
+                <button class="prev-btn">&#9664;</button> <!-- Flèche gauche -->
+                <button class="next-btn">&#9654;</button> <!-- Flèche droite -->
+            </div>
+            <script src="../js/script.js"></script>
+        </section>
+
+        <section id="video">
+            <h2 class="h2-title">The Super Mario Bros Movie Trailer</h2>
+            <div class="video-container">
+                <video width="640" height="480" controls >
+                    <source src="../video/mario_movie.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        
+        <section id="news">
+            <h2 class="h2-title">Actualités de Mario et Nintendo :</h2>
+            <div class="news-item">
+                <h4 class="h4-title">Dernières Actualités :</h4>
+                <ul>
+                    <li>
+                        <B>Nouveaux Jeux Mario :</B> Super Mario Odyssey 2 a été annoncé lors du dernier Nintendo Direct, avec de nouvelles aventures passionnantes et des mondes encore plus vastes à explorer.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Collaboration avec d'autres Franchises :</B> Nintendo a annoncé une collaboration spéciale avec Universal Studios pour créer une attraction Mario Kart dans les parcs à thème Universal.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Mises à Jour de Jeux Existant :</B> Animal Crossing: New Horizons recevra une nouvelle mise à jour de contenu avec de nouveaux événements saisonniers, objets et fonctionnalités.
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item">
+                <h4 class="h4-title">Tendances et Innovations :</h4>
+                <ul>
+                    <li>
+                        <B>Technologie VR :</B> Nintendo explore de nouvelles possibilités avec la réalité virtuelle, offrant des expériences de jeu immersives dans des titres comme The Legend of Zelda: Breath of the Wild.
+                    </li>
+                    <br>
+                    <li>
+                        <B>E-Sports :</B> Les tournois compétitifs de jeux Nintendo, tels que Super Smash Bros. Ultimate et Splatoon 2, continuent d'attirer l'attention des joueurs du monde entier.
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item">
+                <h4 class="h4-title">Dernier Nintendo Direct :</h4>
+                <ul>
+                    <li>
+                        <B>Annonces Majeures : </B> L'événement a révélé de nouveaux jeux, des remasters de classiques Nintendo, des DLC pour les titres existants et des collaborations surprises.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Réactions des Fans :</B> Les fans ont exprimé leur enthousiasme pour les annonces, en particulier pour les nouvelles entrées de franchises bien-aimées comme Metroid et Pikmin.
+                    </li>
+                </ul>
+                <h4 class="h4-title">Prochain Nintendo Direct :</h4>
+                <ul>
+                    <li>
+                        <B>Date et Attentes : </B> Le prochain Nintendo Direct est prévu pour le mois de juillet 2024. Les attentes sont élevées, avec des spéculations sur de nouveaux jeux, des mises à jour de la console Nintendo Switch et des surprises inattendues.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="games">
+            <h2 class="h2-title">Principaux jeux Mario</h2>
+            <table id="games-table">
+                <thead>
+                    <tr>
+                        <th >Nom du jeu</th>
+                        <th>Date de sortie <button onclick="sortTable(1)" id="sort-button">↑↓</button></th>
+                        <th>Console</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Super Mario Odyssey</td>
+                        <td>2017</td>
+                        <td>Nintendo Switch</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario Galaxy</td>
+                        <td>2007</td>
+                        <td>Nintendo Wii</td>
+                    </tr>
+                    <tr>
+                        <td>New Super Mario Bros.</td>
+                        <td>2006</td>
+                        <td>Nintendo DS</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario Sunshine</td>
+                        <td>2002</td>
+                        <td>Nintendo GameCube</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario 64</td>
+                        <td>1996</td>
+                        <td>Nintendo 64</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario World</td>
+                        <td>1990</td>
+                        <td>Super Nintendo Entertainment System (SNES)</td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario Bros.</td>
+                        <td>1985</td>
+                        <td>Nintendo Entertainment System (NES)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="jeux-mario">
+            <h2 class="h2-title">Les dernières sorties sur Nintendo Switch</h2>
+            <div class="jeux-container">
+                <a href="https://www.lemondedemario.fr/jeux/50-super-mario-bros-wonder" target="_blank"><img src="../img/mariojeu.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/65-mario-plus-rabbids-sparks-of-hope" target="_blank"><img src="../img/mariojeu1.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/64-mario-strikers-battle-league" target="_blank"><img src="../img/mariojeu2.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/59-super-mario-maker-2" target="_blank"><img src="../img/mariojeu3.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/56-new-super-mario-bros-u-deluxe" target="_blank"><img src="../img/mariojeu4.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/55-super-smash-bros-ultimate" target="_blank"><img src="../img/mariojeu5.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/57-super-mario-party" target="_blank"><img src="../img/mariojeu6.jpg"></a>
+                <a href="https://www.lemondedemario.fr/jeux/18-super-mario-odyssey" target="_blank"><img src="../img/mariojeu7.jpg"></a>
+                
+                
+            </div>
+            </section>
+     
+        <section id="news">
+            <h2 class="h2-title">Histoire de la création de Mario</h2>
+            <div class="news-item">
+                <h4 class="h4-title">Origines de Mario :</h4>
+                <ul>
+                    <li>
+                        <B>Créateur :</B> Mario a été créé par le célèbre concepteur de jeux vidéo <a href="https://fr.wikipedia.org/wiki/Shigeru_Miyamoto" class="info-button">Shigeru Miyamoto</a>, qui a introduit le personnage dans le jeu d'arcade classique <a href="https://en.wikipedia.org/wiki/Donkey_Kong" class="info-button"> Donkey Kong</a> en 1981.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Évolution du Personnage :</B> De ses débuts modestes en tant que menuisier nommé "Jumpman", Mario est devenu l'un des personnages les plus emblématiques de l'histoire du jeu vidéo.
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item">
+                <h4 class="h4-title">Jeux Clés de la Franchise :</h4>
+                <ul>
+                    <li>
+                        <B>Culture Populaire :</B> Mario est devenu un symbole de la culture populaire, apparaissant dans des émissions de télévision, des films, des produits dérivés et des événements spéciaux à travers le monde.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Innovation et Inspiration :</B> La franchise Mario a inspiré des générations de joueurs et de développeurs, repoussant les limites de la créativité et de l'imagination dans l'industrie du jeu vidéo.
+                    </li>
+                </ul>
+            </div>
+            <div class="news-item">
+                <h4 class="h4-title">Héritage et Impact :</h4>
+                <ul>
+                    <li>
+                        <B>Super Mario Bros. :</B> La sortie de Super Mario Bros. en 1985 a été un tournant majeur, établissant Mario comme une superstar mondiale et définissant le genre du jeu de plateforme.
+                    </li>
+                    <br>
+                    <li>
+                        <B>Super Mario 64 :</B> Avec son passage à la 3D en 1996, Super Mario 64 a révolutionné les jeux vidéo et a ouvert la voie à de nouvelles possibilités de conception de niveaux et d'exploration.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Julien CHAN PENG & Alex HAING. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

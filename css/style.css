@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../img/mario_fond.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    position: relative;
+    z-index: 0;
+}
+
+/* Style logo du site (Yoshi) */
+
+.logo img {
+    width: 130px;
+    height: 150px;
+    border-radius: 1%;
+    margin-left : 47%;
+}
+
+/* Style du header */
+
+header {
+    background-color: rgba(229, 62, 62, 0.9);
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+h2{
+    text-align: center;
+}
+
+/* Style de la barre de navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #0000FF; 
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Style du main*/
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Style de la vidéo trailer Mario */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-thumbnail {
+    width: 640px;
+    height: 480px;
+    border: none
+    cursor: pointer;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Style des blocs de texte */
+
+#news .news-item {
+    background-color: #ffffff;
+    border: 2px solid #ff0000; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: justify;
+}
+
+#news .news-perso {
+    background-color: #ffffff;
+    border: 2px solid #ff0000; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+#news .news-list{
+    text-align : justify;
+}
+
+/* Style du footer */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e53e3e;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Style bannière perso*/
+
+.apparition {
+    list-style-type: none;
+}
+
+#nomPerso{
+    left: 50%
+
+}
+
+#banner-perso{
+    background-color: grey;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    
+}
+
+#name-perso{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+
+}
+
+/* Style du carrousel */
+
+.carousel-container {
+    position: relative;
+    width: 100;
+    max-width: 800px;
+    overflow: hidden;
+    border: 5px solid #FF0000; 
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    min-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0000FF; 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #FFD700; 
+}
+
+/* Style du tableau des principaux jeux Mario */
+
+#games table {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+#games th, #games td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#games th {
+    background-color: #ff0000;
+    color: white;
+}
+
+#sort-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.h2-title{
+    background-color: red;
+    color:white;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.h4-title{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 800;
+    text-decoration:underline;
+}
+
+/* Style du menu avec les jeux Mario */
+
+.jeux-mario {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.jeux-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.jeux-container img {
+    width:250px; /
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.jeux-container img:hover {
+    transform: scale(1.1); 
+}
+
+.info-button:hover{
+    color: red;
+}
+
+/* Style titre h1 */
+
+#title{
+    font-size: 30px;
+    background-color: red;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Style titre perso */
+
+#title-mario{
+    font-size: 30px;
+    background-color: red;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#title-luigi{
+    font-size: 30px;
+    background-color:green;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#title-toad{
+    font-size: 30px;
+    background-color:burlywood;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#title-peach{
+    font-size: 30px;
+    background-color: rgb(197, 82, 101);
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#title-yoshi{
+    font-size: 30px;
+    background-color: greenyellow;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Style de la page à propos */
+
+#ecole .efrei {
+    background-color: #ffffff;
+    border: 2px solid #ff0000; 
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: jus;
+}
+
+#efrei-logo{
+    width: 200px;
+    height: auto; 
+    padding: 20px;
+}
+#efrei-carte{
+    width: 500px;
+    height: auto; 
+    padding: 30px;
+    
+}
+#efrei-carte:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+#efrei-logo:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+/* Style du menu déroulant de personnages*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+/* Style du quiz */
+
+.quiz-container-mario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: 3px solid red;
+}
+
+#quiz-title {
+    color: #333;
+}
+
+.question-mario {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+#check-answers-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#check-answers-button:hover {
+    background-color: blue;
+}
+
+#result-mario {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

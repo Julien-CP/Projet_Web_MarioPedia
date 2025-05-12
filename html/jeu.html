@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Mario Pedia</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="icon" href="../img/yoshi_logo.png"type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Mario Pedia</h1>
+        <br>
+        <a href="./accueil.html" class="logo">
+            <img src="../img/yoshi_logo.png" alt="Yoshi-Logo">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Personnages</a>
+                    <div class="dropdown-content">
+                        <a href="mario.html">Mario</a>
+                        <a href="luigi.html">Luigi</a>
+                        <a href="peach.html">Peach</a>
+                        <a href="yoshi.html">Yoshi</a>
+                        <a href="toad.html">Toad</a>
+                    </div>
+                </li>
+                <li><a href="jeu.html">Jeu</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>    
+        <div class="quiz-container-mario">
+            <h1 id="quiz-title-mario">Quiz Vrai/Faux Mario</h1>
+            <div id="quiz-mario">
+                <div class="question-mario">
+                    <p>1. Mario a été créé par Shigeru Miyamoto.</p>
+                    <label><input type="radio" name="q1" value="true"> Vrai</label>
+                    <label><input type="radio" name="q1" value="false"> Faux</label>
+                </div>
+            <div class="question-mario">
+                <p>2. Le premier jeu où Mario est apparu est Super Mario Bros.</p>
+                <label><input type="radio" name="q2" value="true"> Vrai</label>
+                <label><input type="radio" name="q2" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>3. Luigi est le frère jumeau de Mario.</p>
+                <label><input type="radio" name="q3" value="true"> Vrai</label>
+                <label><input type="radio" name="q3" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>4. Mario est un plombier italien.</p>
+                <label><input type="radio" name="q4" value="true"> Vrai</label>
+                <label><input type="radio" name="q4" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>5. Le champignon Goomba est l'allié de Mario.</p>
+                <label><input type="radio" name="q5" value="true"> Vrai</label>
+                <label><input type="radio" name="q5" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>6. Bowser est le principal antagoniste de Mario.</p>
+                <label><input type="radio" name="q6" value="true"> Vrai</label>
+                <label><input type="radio" name="q6" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>7. Princess Peach est souvent kidnappée par Bowser.</p>
+                <label><input type="radio" name="q7" value="true"> Vrai</label>
+                <label><input type="radio" name="q7" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>8. Yoshi est un dinosaure vert.</p>
+                <label><input type="radio" name="q8" value="true"> Vrai</label>
+                <label><input type="radio" name="q8" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>9. Wario est le rival de Mario.</p>
+                <label><input type="radio" name="q9" value="true"> Vrai</label>
+                <label><input type="radio" name="q9" value="false"> Faux</label>
+            </div>
+            <div class="question-mario">
+                <p>10. Toad est un personnage jouable dans Mario Kart.</p>
+                <label><input type="radio" name="q10" value="true"> Vrai</label>
+                <label><input type="radio" name="q10" value="false"> Faux</label>
+            </div>
+            <br>
+            <button id="check-answers-button" onclick="checkAnswers()">Vérifier les réponses</button>
+            <div id="result-mario"></div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</main>
+
+    <footer>
+        <p>&copy; 2024 Julien CHAN PENG & Alex HAING. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
